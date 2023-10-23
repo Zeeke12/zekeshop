@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Topbar from './component/topbar/Topbar';
 import Feed from './pages/Home/Feed';
 import { ProductContextProvider } from './db/ProductContext';
@@ -17,7 +17,7 @@ function App() {
     <div>
     <ProductContextProvider>
       <ApiDataProvider>
-    <Router>
+    <BrowserRouter>
       <Topbar />
       <Routes>
         <Route exact path='/' element={<Feed />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path='/result' element={<SearchResults />} />
         <Route path='/test' element={<TestPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
     </ApiDataProvider>
     </ProductContextProvider>
     </div>

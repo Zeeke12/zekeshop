@@ -8,7 +8,7 @@ const Products = () => {
   return (
     <div className='flex '>
     <div >
-      <div className='bg-transparent text-9xl'>SHOP BY BRANDS</div>
+      <div className='bg-transparent text-3xl md:text-6xl lg:text-9xl'>SHOP BY BRANDS</div>
       <div className='flex gap-5 flex-wrap my-4 bg-transparent'>
 
       <button className='px-10 py-2 border-1 border-green-900 hover:bg-green-900 hover:text-white  ' onClick={filterBySearchAll} >All</button> 
